@@ -62,7 +62,7 @@ export default function MinerCheck() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Address
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {result.address}
               </td>
             </tr>
@@ -70,7 +70,7 @@ export default function MinerCheck() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Total Hashrate
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {Number(result.total_hashrate).toFixed(1)}
               </td>
             </tr>
@@ -78,7 +78,7 @@ export default function MinerCheck() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 24h Hashrate Average
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {Number(result.total_hashrate24h).toFixed(1)}
               </td>
             </tr>
@@ -86,7 +86,7 @@ export default function MinerCheck() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Connected Miners
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {result.total_online}
               </td>
             </tr>

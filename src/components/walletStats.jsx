@@ -65,7 +65,7 @@ export default function WalletStats() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Address
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {response.address}
               </td>
             </tr>
@@ -73,7 +73,7 @@ export default function WalletStats() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Total Paid
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {Number(response.total_payment).toFixed(1)}
               </td>
             </tr>
@@ -81,7 +81,7 @@ export default function WalletStats() {
               <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Total Pending
               </th>
-              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {Number(response.total_unpaid).toFixed(1)}
               </td>
             </tr>

@@ -34,19 +34,19 @@ export default function PoolWorkers({ workers }) {
                 key={i}
                 className="hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
               >
-                <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2 font-mono text-xs md:text-sm break-all">
+                <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2 font-mono text-xs md:text-sm break-all">
                   {w.address}
                 </td>
-                <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2 capitalize">
+                <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2 capitalize">
                   {w.status}
                 </td>
-                <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2 text-right">
+                <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2 text-right">
                   {Number(w.unpaidShares).toFixed(1)}
                 </td>
-                <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2 text-right">
+                <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2 text-right">
                   {Number(w.hashrate).toFixed(1)}
                 </td>
-                <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2 text-center">
+                <td className="border text-gray-900 dark:text-white border-gray-200 dark:border-gray-600 px-4 py-2 text-center">
                   {w.workers ? w.workers.length : 0}
                 </td>
               </tr>
