@@ -2,6 +2,9 @@ import React from "react";
 
 export default function PoolWorkers({ workers }) {
   if (!workers || workers.length === 0) return null;
+  // Remove the 0 index worker
+  const filteredWorkers = workers.slice(1);
+  if (filteredWorkers.length === 0) return null;
   return (
     <section className="bg-white dark:bg-gray-800  rounded-xl shadow-lg p-6 animate-fade-in-up mt-8">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-white dark:text-blue mb-2 font-poppins">
@@ -29,7 +32,7 @@ export default function PoolWorkers({ workers }) {
             </tr>
           </thead>
           <tbody>
-            {workers.map((w, i) => (
+            {filteredWorkers.map((w, i) => (
               <tr
                 key={i}
                 className="hover:bg-blue-50 dark:hover:bg-gray-700 transition-colors"
