@@ -59,34 +59,34 @@ export default function MinerCheck() {
         <table className="w-full border border-collapse mt-4 animate-fade-in-up">
           <tbody>
             <tr>
-              <th className="bg-blue-50 theme-dark:text-blue-200 theme-dark:bg-gray-700 font-bold border border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 Address
               </th>
-              <td className="border text-gray-900 theme-dark:text-white border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <td className="border  text-white  border-gray-600 px-4 py-2">
                 {result.address}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 theme-dark:text-blue-200 theme-dark:bg-gray-700 font-bold border border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 Total Hashrate
               </th>
-              <td className="border text-gray-900 theme-dark:text-white border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <td className="border  text-white  border-gray-600 px-4 py-2">
                 {Number(result.total_hashrate).toFixed(1)}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 theme-dark:text-blue-200 theme-dark:bg-gray-700 font-bold border border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 24h Hashrate Average
               </th>
-              <td className="border text-gray-900 theme-dark:text-white border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <td className="border  text-white  border-gray-600 px-4 py-2">
                 {Number(result.total_hashrate24h).toFixed(1)}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 theme-dark:text-blue-200 theme-dark:bg-gray-700 font-bold border border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 Connected Miners
               </th>
-              <td className="border text-gray-900 theme-dark:text-white border-gray-200 theme-dark:border-gray-600 px-4 py-2">
+              <td className="border  text-white  border-gray-600 px-4 py-2">
                 {result.total_online}
               </td>
             </tr>

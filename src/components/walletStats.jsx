@@ -62,27 +62,27 @@ export default function WalletStats() {
         <table className="w-full border-collapse mt-4 animate-fade-in-up">
           <tbody>
             <tr>
-              <th className="bg-blue-50 text-blue-200 bg-gray-700 font-bold border border-gray-200 border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 Address
               </th>
-              <td className="border text-gray-900 text-white border-gray-200 border-gray-600 px-4 py-2">
-                {response.address}
+              <td className="border  text-white  border-gray-600 px-4 py-2">
+                {response?.address}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 text-blue-200 bg-gray-700 font-bold border border-gray-200 border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 Total Paid
               </th>
-              <td className="border text-gray-900 text-white border-gray-200 border-gray-600 px-4 py-2">
-                {Number(response.total_payment).toFixed(1)}
+              <td className="border  text-white  border-gray-600 px-4 py-2">
+                {Number(response?.total_payment).toFixed(1)}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 text-blue-200 bg-gray-700 font-bold border border-gray-200 border-gray-600 px-4 py-2">
+              <th className=" text-blue-200 bg-gray-700 font-bold border  border-gray-600 px-4 py-2">
                 Total Pending
               </th>
-              <td className="border text-gray-900 text-white border-gray-200 border-gray-600 px-4 py-2">
-                {Number(response.total_unpaid).toFixed(1)}
+              <td className="border  text-white  border-gray-600 px-4 py-2">
+                {Number(response?.total_unpaid).toFixed(1)}
               </td>
             </tr>
           </tbody>

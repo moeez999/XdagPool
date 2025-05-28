@@ -14,29 +14,26 @@ export default function PoolWorkers({ workers }) {
         <table className="w-full border-separate border-spacing-y-2  roverflow-hidden animate-fade-in-up">
           <thead>
             <tr>
-              <th className="text-left px-4 py-3 bg-blue-100 bg-gray-700  text-blue-200 font-bold rounded-tl-lg">
+              <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold rounded-tl-lg">
                 Address
               </th>
-              <th className="text-left px-4 py-3 bg-blue-100 bg-gray-700  text-blue-200 font-bold">
+              <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold">
                 Status
               </th>
-              <th className="text-left px-4 py-3 bg-blue-100 bg-gray-700  text-blue-200 font-bold">
+              <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold">
                 Unpaid Shares
               </th>
-              <th className="text-left px-4 py-3 bg-blue-100 bg-gray-700  text-blue-200 font-bold">
+              <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold">
                 Hashrate
               </th>
-              <th className="text-left px-4 py-3 bg-blue-100 bg-gray-700  text-blue-200 font-bold rounded-tr-lg">
+              <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold rounded-tr-lg">
                 # Sub-Workers
               </th>
             </tr>
           </thead>
           <tbody>
             {filteredWorkers.map((w, i) => (
-              <tr
-                key={i}
-                className="hover:bg-blue-50 hover:bg-gray-700 transition-colors"
-              >
+              <tr key={i} className=" hover:bg-gray-700 transition-colors">
                 <td className="border  text-white  border-gray-600 px-4 py-2 font-mono text-xs md:text-sm break-all">
                   {w.address}
                 </td>
