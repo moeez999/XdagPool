@@ -29,7 +29,7 @@ export default function MinerCheck() {
   };
 
   return (
-    <div className="bg-white theme-dark:bg-gray-800 rounded-xl shadow-lg p-6 animate-fade-in-up">
+    <div className="bg-gray-800 rounded-xl shadow-lg p-6 animate-fade-in-up">
       <h2 className="text-2xl md:text-3xl font-bold text-center text-white theme-dark:text-blue mb-2 font-poppins">
         Your Miner Stats on XdagReef.org
       </h2>
@@ -47,7 +47,7 @@ export default function MinerCheck() {
         <button
           type="submit"
           disabled={loading}
-          className="px-6 theme-dark:bg-blue-200 w-full py-2 rounded-lg hover:bg-blue-300 text-blue font-semibold text-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400"
+          className="px-6 bg-blue-200  w-full py-2 rounded-lg hover:bg-blue-300 text-blue font-semibold text-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 "
         >
           {loading ? "Checking..." : "Submit"}
         </button>
