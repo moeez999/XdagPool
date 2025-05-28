@@ -29,10 +29,10 @@ export default function MinerCheck() {
   };
 
   return (
-    <div className="bg-white  rounded-xl shadow-lg p-6 animate-fade-in-up">
-      <h1 className="text-2xl md:text-3xl font-bold text-center text-blue-700 dark:text-blue mb-2  font-poppins">
+    <div className="bg-white dark:bg-gray-800  rounded-xl shadow-lg p-6 animate-fade-in-up">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-white dark:text-blue mb-2 font-poppins">
         Your Miner Stats on XdagReef.org
-      </h1>
+      </h2>
       <form
         onSubmit={handleSubmit}
         className="flex flex-col gap-4 mb-4 justify-center items-center"
@@ -42,12 +42,12 @@ export default function MinerCheck() {
           value={input}
           onChange={(e) => setInput(e.target.value)}
           placeholder="Enter wallet address..."
-          className="flex-1   w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 font-poppins text-lg transition-all duration-300"
+          className="flex-1 text-white   w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-blue-400 font-poppins text-lg transition-all duration-300"
         />
         <button
           type="submit"
           disabled={loading}
-          className="px-6  w-full py-2 rounded-lg bg-blue-600 hover:bg-blue-800 text-blue font-semibold text-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 "
+          className="px-6 dark:bg-blue-200  w-full py-2 rounded-lg hover:bg-blue-300 text-blue font-semibold text-lg shadow-md transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-400 "
         >
           {loading ? "Checking..." : "Submit"}
         </button>
@@ -59,34 +59,34 @@ export default function MinerCheck() {
         <table className="w-full border-collapse mt-4 animate-fade-in-up">
           <tbody>
             <tr>
-              <th className="bg-blue-50 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
+              <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Address
               </th>
-              <td className="border border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {result.address}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
+              <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Total Hashrate
               </th>
-              <td className="border border-gray-200 dark:border-gray-600 px-4 py-2">
-                {Number(result.total_hashrate).toFixed(2)}
+              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+                {Number(result.total_hashrate).toFixed(1)}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
+              <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 24h Hashrate Average
               </th>
-              <td className="border border-gray-200 dark:border-gray-600 px-4 py-2">
-                {Number(result.total_hashrate24h).toFixed(2)}
+              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
+                {Number(result.total_hashrate24h).toFixed(1)}
               </td>
             </tr>
             <tr>
-              <th className="bg-blue-50 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
+              <th className="bg-blue-50 dark:text-blue-200 dark:bg-gray-700 font-bold border border-gray-200 dark:border-gray-600 px-4 py-2">
                 Connected Miners
               </th>
-              <td className="border border-gray-200 dark:border-gray-600 px-4 py-2">
+              <td className="border text-white border-gray-200 dark:border-gray-600 px-4 py-2">
                 {result.total_online}
               </td>
             </tr>

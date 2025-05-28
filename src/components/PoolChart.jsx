@@ -26,13 +26,13 @@ export default function PoolChart({ workers }) {
     datasets: [
       {
         label: "Hashrate",
-        data: workers.map((w) => w.hashrate),
+        data: workers.map((w) => Number(w.hashrate).toFixed(1)),
         backgroundColor: "#2563eb",
         borderRadius: 8,
       },
       {
         label: "Unpaid Shares",
-        data: workers.map((w) => w.unpaidShares),
+        data: workers.map((w) => Number(w.unpaidShares).toFixed(1)),
         backgroundColor: "#60a5fa",
         borderRadius: 8,
       },
@@ -46,26 +46,26 @@ export default function PoolChart({ workers }) {
         display: true,
         text: "Pool Workers Hashrate & Unpaid Shares",
         color: "#2563eb",
-        font: { size: 18, family: "Poppins" },
+        font: { size: 18, family: "Poppins, sans-serif" },
       },
     },
     scales: {
       x: {
-        ticks: { color: "#2563eb", font: { family: "Poppins" } },
+        ticks: { color: "#2563eb", font: { family: "Poppins, sans-serif" } },
         grid: { color: "#e0e7ef" },
       },
       y: {
         beginAtZero: true,
-        ticks: { color: "#2563eb", font: { family: "Poppins" } },
+        ticks: { color: "#2563eb", font: { family: "Poppins, sans-serif" } },
         grid: { color: "#e0e7ef" },
       },
     },
   };
   return (
     <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 animate-fade-in-up mt-8">
-      <h3 className="text-xl md:text-2xl font-bold text-center text-blue-700 dark:text-white mb-2 font-poppins">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-white dark:text-blue mb-2 font-poppins">
         Pool Workers Chart
-      </h3>
+      </h2>
       <div className="my-8 w-full overflow-x-auto">
         <div className="min-w-[320px] max-w-full">
           <Bar data={chartData} options={chartOptions} height={220} />

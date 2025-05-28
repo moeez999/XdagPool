@@ -12,7 +12,7 @@ function App() {
       window.matchMedia &&
       window.matchMedia("(prefers-color-scheme: dark)").matches
     ) {
-      return "dark";
+      return "dark:bg-gray-900";
     }
     return "light";
   });
@@ -29,7 +29,7 @@ function App() {
   return (
     <div className="min-h-screen  transition-colors duration-500">
       <Navbar onToggleTheme={handleToggleTheme} theme={theme} />
-      <main className="max-w-3xl mx-auto p-4 space-y-8">
+      <main className="max-w-4xl mx-auto p-4 space-y-8">
         <PoolStats />
         <MinerCheck />
         <WalletStats />

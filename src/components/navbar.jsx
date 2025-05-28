@@ -3,7 +3,7 @@ import React from "react";
 export default function Navbar({ onToggleTheme, theme }) {
   return (
     <nav className="flex items-center justify-between px-6 py-4 bg-white dark:bg-gray-900 shadow-md">
-      <span className="text-2xl font-bold font-poppins text-blue-700 dark:text-blue drop-shadow-lg select-none">
+      <span className="text-2xl font-bold font-poppins text-white dark:text-blue drop-shadow-lg select-none">
         <span className="text-3xl text-blue-500 dark:text-blue-300 font-extrabold">
           X
         </span>
