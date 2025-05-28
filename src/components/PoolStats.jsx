@@ -51,8 +51,8 @@ export default function PoolStats({ theme }) {
 
   return (
     <>
-      <section className="bg-white dark:bg-gray-800  rounded-xl shadow-lg p-6 animate-fade-in-up mt-8">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-white dark:text-blue mb-2 font-poppins">
+      <section className="bg-gray-800  rounded-xl shadow-lg p-6 animate-fade-in-up mt-8">
+        <h2 className="text-2xl md:text-3xl font-bold text-center text-white text-blue mb-2 font-poppins">
           Pool Stats
         </h2>
         {loading && <Loader />}
@@ -61,35 +61,35 @@ export default function PoolStats({ theme }) {
           <div className="mb-4">
             <table className="w-full border-separate border-spacing-y-2  overflow-hidden animate-fade-in-up">
               <tbody>
-                <tr className=" dark:bg-gray-700">
-                  <th className="text-left px-4 py-3 bg-blue-100 dark:bg-gray-700 text-blue-700 dark:text-blue-200 font-bold rounded-tl-lg">
+                <tr className=" bg-gray-700">
+                  <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold rounded-tl-lg">
                     Current pool Hashrate
                   </th>
-                  <td className="px-4 py-3  dark:text-blue-300 font-semibold rounded-tr-lg">
+                  <td className="px-4 py-3  text-blue-300 font-semibold rounded-tr-lg">
                     {Number(hashrate.hashrate).toFixed(1)}
                   </td>
                 </tr>
-                <tr className=" dark:bg-gray-700">
-                  <th className="text-left px-4 py-3 bg-blue-100 dark:bg-gray-700 text-blue-700 dark:text-blue-200 font-bold">
+                <tr className=" bg-gray-700">
+                  <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold">
                     24h Hashrate
                   </th>
-                  <td className="px-4 py-3 dark:text-blue-300 font-semibold">
+                  <td className="px-4 py-3 text-blue-300 font-semibold">
                     {Number(hashrate.hashrate24h).toFixed(1)}
                   </td>
                 </tr>
-                <tr className=" dark:bg-gray-700">
-                  <th className="text-left px-4 py-3 bg-blue-100 dark:bg-gray-700 text-blue-700 dark:text-blue-200 font-bold">
+                <tr className=" bg-gray-700">
+                  <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold">
                     Total Miners
                   </th>
-                  <td className="px-4 py-3 dark:text-blue-300 font-semibold">
+                  <td className="px-4 py-3 text-blue-300 font-semibold">
                     {Number(hashrate.total).toFixed(1)}
                   </td>
                 </tr>
-                <tr className=" dark:bg-gray-700">
-                  <th className="text-left px-4 py-3 bg-blue-100 dark:bg-gray-700 text-blue-700 dark:text-blue-200 font-bold rounded-bl-lg">
+                <tr className=" bg-gray-700">
+                  <th className="text-left px-4 py-3  bg-gray-700  text-blue-200 font-bold rounded-bl-lg">
                     Online Miners
                   </th>
-                  <td className="px-4 py-3 dark:text-blue-300 font-semibold  rounded-br-lg">
+                  <td className="px-4 py-3 text-blue-300 font-semibold  rounded-br-lg">
                     {Number(hashrate.total_online).toFixed(1)}
                   </td>
                 </tr>

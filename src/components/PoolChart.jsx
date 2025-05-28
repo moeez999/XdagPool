@@ -82,8 +82,8 @@ export default function PoolChart({ workers, theme = "light" }) {
     },
   };
   return (
-    <section className="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-6 animate-fade-in-up mt-8">
-      <h2 className="text-2xl md:text-3xl font-bold text-center text-white dark:text-blue mb-2 font-poppins">
+    <section className="bg-white bg-gray-800 rounded-xl shadow-lg p-6 animate-fade-in-up mt-8">
+      <h2 className="text-2xl md:text-3xl font-bold text-center text-white text-blue mb-2 font-poppins">
         Pool Workers Chart
       </h2>
       <div className="my-8 w-full overflow-x-auto">

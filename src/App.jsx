@@ -10,10 +10,10 @@ function App() {
   const [theme, setTheme] = useState("dark");
 
   const handleToggleTheme = () => {
-    if (document.querySelector("body").classList.contains("dark:bg-gray-900")) {
-      document.querySelector("body").classList.remove("dark:bg-gray-900");
+    if (document.querySelector("body").classList.contains("bg-gray-900")) {
+      document.querySelector("body").classList.remove("bg-gray-900");
     } else {
-      document.querySelector("body").classList.add("dark:bg-gray-900");
+      document.querySelector("body").classList.add("bg-gray-900");
     }
 
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
