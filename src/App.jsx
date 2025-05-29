@@ -30,7 +30,7 @@ function App() {
       }`}
     >
       <Navbar onToggleTheme={handleToggleTheme} theme={theme} />
-      <main className="max-w-4xl mx-auto p-4 space-y-8 flex-1 w-full">
+      <main className="sm:max-w-4xl mx-auto p-4 space-y-8 flex-1 w-full">
         <Routes>
           <Route
             path="/"
